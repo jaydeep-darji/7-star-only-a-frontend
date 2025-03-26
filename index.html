@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 STAR BOX CRICKET</title>
+    <!-- linking font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="live.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+    <nav class="navbar section-content" >
+        <a href="#" class="nav-logo">
+            <h2 class="logo-text">BCT</h2>
+        </a>
+        <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+            <li class="nav-item">
+                 <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About Us</a>
+           </li>
+            <li class="nav-item">
+                 <a href="#schedule" class="nav-link">Schedule </a>
+            </li>
+            <li class="nav-item">
+                 <a href="#Book" class="nav-link">Book Now</a>
+            </li>
+            <li class="nav-item">
+                 <a href="#Service" class="nav-link">Services</a>
+            </li>
+          
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+    </header>
+    <!-- hero body section  -->
+    <main>
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Box Cricket</h2>
+                    <h3 class="subtitle">Don't just watch-play,score and celebrate!</h3>
+                    <p class="description">Small ground, big excitement! Play, compete, and celebrate the spirit of cricket in our electrifying box cricket tournament</p>
+                    <div class="buttons" style="width:450px;">
+                        <a href="SignUp_LogIn_Form.html" class="button Registration">Registration/Login</a>
+                        <a href="contact.html" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="photos/main bat.png" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+        <!-- About Us -->
+         <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                  <img src="photos/disscussion.png" alt="about" class="about-image">
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">Welcome to the Box Cricket Tournament Booking System, your ultimate platform for organizing and managing box cricket tournaments effortlessly. Our system enables teams to register, schedule matches, and book slots with ease. Designed with a user-friendly interface, it ensures a seamless experience for both administrators and participants. With real-time updates, secure payment integration, and efficient match scheduling, we aim to simplify tournament management. Join us and experience hassle-free cricket tournament coordination like never before!</p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </section>
+         <!-- schedule data -->
+         <body-sch>
+            <section class="sched" id="schedule">
+                <div class="container-sch" >
+                <div class="sche">
+                    <h1-m >Box Cricket Tournament</h1-m><br><br>
+                    <p style=" font-size: 20px;font-weight: 300;">Book your slots and manage your teams in real-time</p>
+                </div>
+                
+                <div class="sche-list">
+                    <ul>
+                        <li><a href="#" class="active">Schedule</a></li>
+                        <li><a href="#">My Bookings</a></li>
+                        <li><a href="#">Teams</a></li>
+                        <li><a href="#">Tournaments</a></li>
+                        <li><a href="#">Results</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dashboard-sch">
+                    <div class="sidebar-sch">
+                        <h3>Filters</h3>
+                        <div class="filters-sch">
+                            <div class="filter-group-sch">
+                                <label for="venue">Venue</label>
+                                <select id="venue">
+                                    <option value="">All Venues</option>
+                                    <option value="venue1">Cricket Box Alpha</option>
+                                    <option value="venue2">Cricket Box Beta</option>
+                                    <option value="venue3">Cricket Box Gamma</option>
+                                </select>
+                            </div>
+                            
+                            <div class="filter-group-sch">
+                                <label for="date">Date</label>
+                                <input type="date" id="date">
+                            </div>
+                            
+                            <div class="filter-group-sch">
+                                <label for="status">Status</label>
+                                <select id="status">
+                                    <option value="">All Statuses</option>
+                                    <option value="available">Available</option>
+                                    <option value="booked">Booked</option>
+                                    <option value="pending">Pending</option>
+                                </select>
+                            </div>
+                            
+                            <button class="btn-sch" id="applyFilters">Apply Filters</button>
+                        </div>
+                        
+                        <div class="team-registration-sch">
+                            <h3>Quick Actions</h3>
+                            <button class="btn-sch" id="registerTeam">Register New Team</button>
+                            <button class="btn btn-accent-sch" id="createTournament">Create Tournament</button>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-container">
+                        <div class="live-indicator">
+                            <div class="pulse"></div>
+                            Live Schedule Updates
+                        </div>
+                        
+                        <div class="status-indicator-sch">
+                            <div class="status-item-sch">
+                                <div class="status-color-sch" style="background-color: var(--available-color)"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="status-item-sch">
+                                <div class="status-color-sch" style="background-color: var(--booked-color)"></div>
+                                <span>Booked</span>
+                            </div>
+                            <div class="status-item-sch">
+                                <div class="status-color-sch" style="background-color: var(--pending-color)"></div>
+                                <span>Pending</span>
+                            </div>
+                        </div>
+                        
+                        <div class="date-navigation-sch">
+                            <button class="btn-sch" id="prevWeek">Previous Week</button>
+                            <h3 id="currentWeek">March 10 - 16, 2025</h3>
+                            <button class="btn-sch" id="nextWeek">Next Week</button>
+                        </div>
+                        
+                        <div class="schedule-header-sch">
+                            <div class="time-column">Time</div>
+                            <div class="day-column">Mon</div>
+                            <div class="day-column">Tue</div>
+                            <div class="day-column">Wed</div>
+                            <div class="day-column">Thu</div>
+                            <div class="day-column">Fri</div>
+                            <div class="day-column">Sat</div>
+                            <div class="day-column">Sun</div>
+                        </div>
+                        
+                        <div class="schedule-grid-sch">
+                            <div class="time-slots-sch" id="timeSlots">
+                                <!-- Time slots will be generated by JavaScript -->
+                            </div>
+                            
+                            <div class="day-slots-sch" id="daySlots">
+                                <!-- Slots will be generated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Booking Modal -->
+            <div id="bookingModal" class="modal-sch">
+                <div class="modal-content-sch">
+                    <span class="close-sch">&times;</span>
+                    <h3 id="modalTitle">Book a Slot</h3>
+                    <form id="bookingForm">
+                        <div class="form-group-sch">
+                            <label for="slotDate">Date</label>
+                            <input type="text" id="slotDate" readonly>
+                        </div>
+                        <div class="form-group-sch">
+                            <label for="slotTime">Time</label>
+                            <input type="text" id="slotTime" readonly>
+                        </div>
+                        <div class="form-group-sch">
+                            <label for="teamSelect">Select Team</label>
+                            <select id="teamSelect">
+                                <option value="">Select your team</option>
+                                <option value="team1">Thunderbolts</option>
+                                <option value="team2">Strikers</option>
+                                <option value="team3">Royal Challengers</option>
+                            </select>
+                        </div>
+                        <div class="form-group-sch">
+                            <label for="opponents">Opponents</label>
+                            <select id="opponents">
+                                <option value="">Open Challenge (Anyone can accept)</option>
+                                <option value="team1">Thunderbolts</option>
+                                <option value="team2">Strikers</option>
+                                <option value="team3">Royal Challengers</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-sch">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Toast Notification -->
+            <div id="toast" class="toast-sch">Slot booked successfully!</div>
+            
+          
+
+        <!-- Payment Section -->
+     
+            <section class="payment-section" id="Book">
+                <div class="section-content">
+                    <div class="payment-container">
+                        <div class="payment-form" id="payment-form">
+                            <h2 class="payment-title">Book Now</h2>
+                            <form action="#" id="bookingForm">
+                                <div class="input-box">
+                                    <input type="text" id="username" placeholder="Username" required>
+                                    <i class='bx bxs-user'></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" id="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}">
+                                    <i class='bx bxs-phone'></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" id="email" placeholder="Email" required>
+                                    <i class='bx bxs-envelope'></i>
+                                </div>
+                                
+                                <div class="select-box">
+                                    <select id="duration" required onchange="handleDurationChange()">
+                                        <option value="">Select Duration</option>
+                                        <option value="1">1 Hour - ₹400</option>
+                                        <option value="2">2 Hours - ₹700</option>
+                                        <option value="3">3 Hours - ₹900</option>
+                                    </select>
+                                    <i class='bx bxs-time'></i>
+                                </div>
+                                
+                                <div class="select-box">
+                                    <select id="timeSlot" required>
+                                        <option value="">Select Time Slot</option>
+                                    </select>
+                                    <i class='bx bxs-calendar'></i>
+                                </div>
+                                
+                                <div class="input-box">
+                                    <input type="text" id="amount" placeholder="Total Amount" readonly>
+                                    <i class='bx bx-rupee'></i>
+                                </div>
+                                
+                                <div class="payment-options">
+                                    <h3>Payment Method</h3>
+                                    <div class="payment-method-options">
+                                        <div class="payment-option">
+                                            <input type="radio" id="online" name="paymentMethod" value="online" checked>
+                                            <label for="online">Online Payment</label>
+                                        </div>
+                                        <div class="payment-option">
+                                            <input type="radio" id="offline" name="paymentMethod" value="offline">
+                                            <label for="offline">Pay at Venue</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div id="onlinePaymentDetails">
+                                    <div class="card-options">
+                                        <div class="card-type">
+                                            <input type="radio" id="credit" name="cardType" value="credit" checked>
+                                            <label for="credit">Credit Card</label>
+                                        </div>
+                                        <div class="card-type">
+                                            <input type="radio" id="debit" name="cardType" value="debit">
+                                            <label for="debit">Debit Card</label>
+                                        </div>
+                                        <div class="card-type">
+                                            <input type="radio" id="upi" name="cardType" value="upi">
+                                            <label for="upi">UPI</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="cardDetails">
+                                        <div class="input-box">
+                                            <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16" pattern="[0-9]{16}">
+                                            <i class='bx bxs-credit-card'></i>
+                                        </div>
+                                        <div class="card-expiry-cvv">
+                                            <div class="input-box expiry">
+                                                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" pattern="[0-9]{2}/[0-9]{2}">
+                                                <i class='bx bxs-calendar'></i>
+                                            </div>
+                                            <div class="input-box cvv">
+                                                <input type="text" id="cvv" placeholder="CVV" maxlength="3" pattern="[0-9]{3}">
+                                                <i class='bx bxs-lock-alt'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="upiDetails" style="display: none;">
+                                        <div class="input-box">
+                                            <input type="text" id="upiId" placeholder="UPI ID (example@upi)">
+                                            <i class='bx bx-id-card'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="button payment-button" id="payButton">Proceed to Pay</button>
+                            </form>
+                        </div>
+                        
+                        <!-- Booking Confirmation Section -->
+                        <div class="booking-confirmation" id="booking-confirmation" style="display: none;">
+                            <div class="confirmation-content">
+                                <i class='bx bx-check-circle confirmation-icon'></i>
+                                <h2>Booking Confirmed!</h2>
+                                <div class="booking-details">
+                                    <p><strong>Booking ID:</strong> <span id="bookingId"></span></p>
+                                    <p><strong>Name:</strong> <span id="confirmName"></span></p>
+                                    <p><strong>Duration:</strong> <span id="confirmDuration"></span></p>
+                                    <p><strong>Time Slot:</strong> <span id="confirmTimeSlot"></span></p>
+                                    <p><strong>Amount:</strong> <span id="confirmAmount"></span></p>
+                                    <p><strong>Payment Method:</strong> <span id="confirmPayment"></span></p>
+                                </div>
+                                <p class="confirmation-message">A confirmation has been sent to your email and mobile number.</p>
+                                <button class="button" onclick="window.location.reload()">Book Another</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Loading Overlay -->
+            <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+                <div class="loader"></div>
+                <p>Processing payment...</p>
+            </div>
+
+    <!-- Services -->
+
+    <section class="Service Section" id="Service">
+      <body-service>
+        <div class="container-services">
+            <h2 style=" color:  #2ecc71; border-bottom: 2px solid  #2ecc71; padding-bottom: 5px;">Our Services</h2>
+            <ul>
+                <li>Online Team Registration</li>
+                <li>Match Scheduling</li>
+                <li>Booking Management</li>
+                <li>Real-time Notifications</li>
+                <li>Secure Payment Integration</li>
+            </ul>
+        </div>
+        </body-service>
+    <!-- Footer Portion -->
+    <footer>
+        <div class="container-foot">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="#" class="logo">
+                        <img src="/photos/footer-logo.jpg" alt="Cricket Logo" style="width: 60px;
+                        height: 60px; border-radius: 90%;">
+                        Box<span>Cricket</span>
+                    </a>
+                    <p>Your one-stop solution for box cricket tournament bookings, team registrations, and match scheduling. Join thousands of cricket enthusiasts on our platform.</p>
+                    <div class="social-links">
+                        
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Tournaments</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Spring Box Cricket League</a></li>
+                        <li><a href="#">Corporate Cricket Challenge</a></li>
+                        <li><a href="#">Summer Cricket Festival</a></li>
+                        <li><a href="#">Weekend Tournament</a></li>
+                        <li><a href="#">Youth Cricket Cup</a></li>
+                        <li><a href="#">Women's Cricket League</a></li>
+                        <li><a href="#">Charity Cricket Event</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <p><i>📍</i>85-B-111,Patan-Harij HighwaySudama Chowkdi,<br>Patan - 384265</br></p>
+                        <p><i>📞</i> +91 9316724240</p>
+                        <p><i>✉</i> 7starboxcricket@gmail.com</p>
+                        <p><i>⏰</i> Mon-Sat: 10:00 AM - 12:00 AM</p>
+                    </div>
+                    <div class="newsletter" style="margin-top: 20px;">
+                        <h4 style="margin-bottom: 10px;">Subscribe to Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email" class="form-control" style="margin-bottom: 10px;">
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Box Cricket Tournament Booking System. All Rights Reserved.</p>
+                <p>Designed and Developed by <a href="#" style="color: var(--primary);">Your Company</a></p>
+            </div>
+        </div>
+    </footer>
+        
+        </main>
+        <script src="booking-script.js"></script>
+        <script src="sch.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
